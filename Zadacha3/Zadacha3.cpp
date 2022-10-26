@@ -16,14 +16,14 @@ int main()
     cin >> b;
     cout << "Введите c:" << endl;
     cin >> c;
+    d = getDiscriminant(a, b, c);
 
-    d = b * b - 4 * a * c;
     if (d > 0){
-        cout << "x1 = " << getRoot1(a, b, c, d) << endl;
-        cout << "x2 = " << getRoot2(a, b, c, d) << endl;
+        cout << "x1 = " << getRoot1(a, b, c) << endl;
+        cout << "x2 = " << getRoot2(a, b, c) << endl;
     }
     if (d == 0) {
-        cout << "x1 = " << getRoot1(a, b, c, d) << endl;
+        cout << "x1 = " << getRoot1(a, b, c) << endl;
     }
     if (d < 0) {
         cout << "Дискриминант меньше нуля, действительных корней нет!" << endl;
